@@ -1,0 +1,82 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.documentAi {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+
+  h2 {
+    margin: 0px 0px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(50, 49, 48);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    span {
+      color: rgb(0, 120, 212);
+      font-size: 16px;
+    }
+
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.setupMessage {
+  border: 1px solid rgb(237, 235, 233);
+  border-radius: 6px;
+  padding: 16px;
+  background: rgb(250, 250, 250);
+  text-align: left;
+
+  h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(50, 49, 48);
+  }
+
+  p {
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  ul {
+    margin: 8px 0 8px 20px;
+    padding: 0;
+  }
+
+  li {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}

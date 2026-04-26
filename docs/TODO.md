@@ -1,0 +1,3 @@
+- [x] Make the `Drop your document here` section a bit smaller
+- [x] Remove technical details like `Extracted Text:` message
+- [x] Add uploading messaging when uploading document

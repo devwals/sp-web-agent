@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- 64x64 toolbox icon; transparent background -->
+  <rect width="64" height="64" fill="none"/>
+  <!-- Document shape -->
+  <path fill="#0078d4" d="M18 10h20l6 6v38H18V10zm6 6v6h14v-6H24zm0 12v6h14v-6H24zm0 12v4h10v-4H24z"/>
+  <!-- Accent dot (AI / agent hint) -->
+  <circle cx="46" cy="18" r="4" fill="#107c10"/>
+</svg>

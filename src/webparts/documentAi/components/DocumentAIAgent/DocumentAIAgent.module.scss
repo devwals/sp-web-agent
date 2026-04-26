@@ -1,0 +1,371 @@
+.container {
+    background-color: white;
+    border: 1px solid rgb(237, 235, 233);
+    border-radius: 4px;
+    padding: 20px;
+    font-family: "Segoe UI", sans-serif;
+
+    h2 {
+        margin: 0px 0px 16px;
+        font-size: 16px;
+        font-weight: 600;
+        color: rgb(50, 49, 48);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+.chatContainer {
+    height: clamp(300px, 52vh, 420px);
+    overflow-y: auto;
+    margin-bottom: 16px;
+    padding: 0px 4px;
+    border: 1px solid rgb(237, 235, 233);
+    border-radius: 4px;
+    background-color: rgb(250, 249, 248);
+}
+
+.chatBox {
+    padding: 16px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bubble {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.userBubble {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.userBubbleIcon {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(199, 199, 199);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.userBubbleText {
+    background-color: rgb(0, 120, 212);
+    color: white;
+    border-radius: 8px;
+    padding: 12px;
+    max-width: 80%;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.assistantBubble {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.assistantBubbleIcon {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(0, 120, 212);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.assistantBubbleText {
+    background-color: rgb(243, 242, 241);
+    border-radius: 8px;
+    padding: 12px;
+    max-width: 80%;
+    font-size: 14px;
+    line-height: 1.4;
+    color: rgb(50, 49, 48);
+    overflow-wrap: break-word;
+}
+
+.plainAssistantText {
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+.assistantPromptWithAction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.uploadPromptButton {
+    background-color: rgb(0, 120, 212);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.uploadPromptButton:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.actionRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.proposedUpdateBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.proposedUpdateTitle {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(50, 49, 48);
+}
+
+.proposedMetadataList {
+    margin: 0;
+    padding: 8px 10px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgb(225, 223, 221);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.proposedMetadataHeaderRow {
+    padding-bottom: 6px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid rgb(225, 223, 221);
+
+    .proposedMetadataKey,
+    .proposedMetadataPrev,
+    .proposedMetadataValue {
+        font-size: 11px;
+        font-weight: 700;
+        color: rgb(96, 94, 92);
+    }
+}
+
+.proposedMetadataRow {
+    display: grid;
+    grid-template-columns: minmax(72px, 0.9fr) minmax(72px, 1fr) minmax(72px, 1fr);
+    gap: 8px;
+    align-items: baseline;
+    padding: 4px 0px;
+
+    &:not(.proposedMetadataHeaderRow) {
+        border-bottom: 1px dashed rgb(237, 235, 233);
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.proposedMetadataKey {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(96, 94, 92);
+    overflow-wrap: anywhere;
+}
+
+.proposedMetadataPrev {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(120, 118, 116);
+    overflow-wrap: anywhere;
+}
+
+.proposedMetadataValue {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(50, 49, 48);
+    overflow-wrap: anywhere;
+}
+
+.updateConfirmationHint {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.45;
+    color: rgb(96, 94, 92);
+}
+
+.linkActionButton {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(0, 120, 212);
+    color: white;
+    border: 1px solid rgb(0, 120, 212);
+    border-radius: 4px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.linkActionButton:hover {
+    background-color: rgb(0, 102, 180);
+    border-color: rgb(0, 102, 180);
+    text-decoration: none;
+    color: white;
+}
+
+.linkActionButtonSecondary {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    color: rgb(0, 120, 212);
+    border: 1px solid rgb(0, 120, 212);
+    border-radius: 4px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.linkActionButtonSecondary:hover {
+    background-color: rgb(243, 242, 241);
+    text-decoration: none;
+    color: rgb(0, 120, 212);
+}
+
+.inlineLink {
+    color: rgb(0, 120, 212);
+    text-decoration: underline;
+    overflow-wrap: anywhere;
+}
+
+.structuredResponse {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        color: rgb(0, 120, 212);
+        text-decoration: none;
+        overflow-wrap: anywhere;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.structuredLabel {
+    font-weight: 700;
+}
+
+.loadingContent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.loadingSpinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgb(200, 198, 196);
+    border-top-color: rgb(0, 120, 212);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    flex-shrink: 0;
+}
+
+.loadingDots::after {
+    content: "";
+    animation: dots 1.2s steps(3, end) infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dots {
+    0% {
+        content: "";
+    }
+    33% {
+        content: ".";
+    }
+    66% {
+        content: "..";
+    }
+    100% {
+        content: "...";
+    }
+}
+
+.inputBar {
+    display: flex;
+    gap: 8px;
+}
+
+.input {
+    flex: 1 1 0%;
+    padding: 8px 12px;
+    border: 1px solid rgb(237, 235, 233);
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: "Segoe UI", sans-serif;
+    outline: none;
+}
+
+.button {
+    background-color: rgb(0, 120, 212);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

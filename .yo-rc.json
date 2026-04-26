@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.17.1",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "biznextapp-document-upload-ai-agent",
+    "libraryId": "04dc5b05-99d7-42d3-ae37-237803e61eea",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "BiznextApp Document Upload AI Agent",
+    "solutionShortDescription": "BiznextApp Document Upload AI Agent - upload documents and get AI-powered answers in Microsoft Teams.",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
