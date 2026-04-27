@@ -3,7 +3,7 @@ import { DocumentAnalysisStructuredResponse } from "../@types/structuredResponse
 /**
  * Parses the legacy first-pass document analysis JSON from the drop-zone / chat flow.
  */
-export function parseDocumentAnalysisResponse(content: string): DocumentAnalysisStructuredResponse | null {
+export function parseDocumentAnalysisResponse(content: string): DocumentAnalysisStructuredResponse | undefined {
     try {
         const parsed = JSON.parse(content) as Partial<DocumentAnalysisStructuredResponse>;
         if (
@@ -22,8 +22,8 @@ export function parseDocumentAnalysisResponse(content: string): DocumentAnalysis
             };
         }
     } catch {
-        return null;
+        return undefined;
     }
 
-    return null;
+    return undefined;
 }

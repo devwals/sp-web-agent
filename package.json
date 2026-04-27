@@ -1,5 +1,5 @@
 {
-  "name": "biznextapp-document-upload-ai-agent",
+  "name": "web-agent-for-sharepoint",
   "version": "0.0.1",
   "private": true,
   "engines": {
@@ -9,6 +9,8 @@
   "scripts": {
     "build": "gulp bundle",
     "clean": "gulp clean",
+    "package-solution": "gulp package-solution",
+    "package-solution:ship": "gulp bundle --ship && gulp package-solution --ship",
     "test": "gulp test"
   },
   "dependencies": {

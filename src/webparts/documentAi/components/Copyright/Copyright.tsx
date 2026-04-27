@@ -5,7 +5,7 @@ export default function Copyright(): JSX.Element {
     return (
         <div className={styles.container}>
             <p className={styles.information}>
-                This web part is powered by Microsoft Azure AI and is designed to assist with document uploads and related queries.
+                Web Agent for SharePoint is powered by Microsoft Azure AI and is designed to assist with document uploads and related queries.
             </p>
             <p className={styles.information}>© 2025 Prashant Devkota. </p>
             <p className={styles.information}>

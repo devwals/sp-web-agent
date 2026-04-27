@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "BiznextApp Document Upload AI Agent",
+    "name": "Web Agent for SharePoint",
     "id": "04dc5b05-99d7-42d3-ae37-237803e61eea",
     "version": "1.0.0.1",
     "includeClientSideAssets": true,
@@ -16,10 +16,10 @@
     },
     "metadata": {
       "shortDescription": {
-        "default": "Document upload and AI assistant web part for SharePoint and Microsoft Teams."
+        "default": "Web Agent for SharePoint — document upload and AI assistant web part for SharePoint and Microsoft Teams."
       },
       "longDescription": {
-        "default": "This solution contains a single SharePoint Framework client-side web part (`DocumentAiWebPart`) that can be used in SharePoint pages (including full-page apps) and as a Microsoft Teams personal app/tab. The web part provides an AI-powered document upload assistant that reads document contents, suggests metadata and upload locations, and surfaces guidance text configured via the web part properties. The package also includes a custom property pane password input control used to securely configure the Azure OpenAI API key."
+        "default": "Web Agent for SharePoint is a SharePoint Framework (SPFx) solution packaged as web-agent-for-sharepoint.sppkg. It contains a single client-side web part (`DocumentAiWebPart`) for SharePoint pages (including full-page apps) and Teams-capable hosts where supported. The web part provides an AI-powered document upload assistant that reads document contents, suggests metadata and upload locations, and surfaces guidance text configured via the web part properties. The package also includes a custom property pane password input control used to configure the Azure OpenAI API key."
       },
       "screenshotPaths": [],
       "videoUrl": "",
@@ -27,14 +27,14 @@
     },
     "features": [
       {
-        "title": "BiznextApp Document Upload AI Agent",
-        "description": "Activates the BiznextApp Document Upload AI Agent client-side web part and supporting custom property pane control.",
+        "title": "Web Agent for SharePoint",
+        "description": "Activates the Web Agent for SharePoint client-side web part and supporting custom property pane control.",
         "id": "7eab642d-bf15-46da-9442-ecab3cd4af32",
         "version": "1.0.0.0"
       }
     ]
   },
   "paths": {
-    "zippedPackage": "solution/biznextapp-document-upload-ai-agent.sppkg"
+    "zippedPackage": "solution/web-agent-for-sharepoint.sppkg"
   }
 }

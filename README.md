@@ -1,8 +1,8 @@
 🛡️ Licensing: This project is Source Available. It is free for internal use by organizations. Commercial redistribution or selling this agent as a service is strictly prohibited.
 
-# BiznextApp Document Upload AI Agent
+# Web Agent for SharePoint
 
-**SharePoint Framework (SPFx) client-side web part** that gives users an **AI assistant for document upload and follow-up** in SharePoint. It is published as **`biznextapp-document-upload-ai-agent.sppkg`** and works on modern SharePoint pages and full-page experiences (see `DocumentAiWebPart.manifest.json` for supported hosts).
+**SharePoint Framework (SPFx) client-side web part** that gives users an **AI assistant for document upload and follow-up** in SharePoint. It is published as **`web-agent-for-sharepoint.sppkg`** and works on modern SharePoint pages and full-page experiences (see `DocumentAiWebPart.manifest.json` for supported hosts).
 
 **Publisher:** [Devwals](https://devwals.com/) (see `config/package-solution.json` for privacy/terms metadata).
 
@@ -91,14 +91,14 @@ Configure the workbench or a dev site with **AI API Endpoint** and **AI API Key*
    ```bash
    gulp package-solution --ship
    ```
-   Output: **`sharepoint/solution/biznextapp-document-upload-ai-agent.sppkg`** (or the path in your `package-solution.json`).
+   Output: **`sharepoint/solution/web-agent-for-sharepoint.sppkg`** (or the path in your `package-solution.json`).
 
 3. **Optional: CDN** — If you use Azure Storage for static assets, configure `config/deploy-azure-storage.json` and run:
    ```bash
    gulp deploy-azure-storage
    ```
 
-4. **Deploy the package** to your **SharePoint App Catalog**, approve/trust as required, and add the **BiznextApp Document Upload AI Agent** web part to pages.
+4. **Deploy the package** to your **SharePoint App Catalog**, approve/trust as required, and add the **Web Agent for SharePoint** web part to pages.
 
 More detail: [Deploy SPFx solutions to SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-sharepoint).
 

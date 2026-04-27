@@ -1,6 +1,6 @@
 # Prompt & Document Flow
 
-This document describes how a user's input flows through the SPFx web part, the planner agent, and SharePoint, ending in either an uploaded document or an updated metadata record.
+This document describes how a user's input flows through the **Web Agent for SharePoint** SPFx web part, the planner agent, and SharePoint, ending in either an uploaded document or an updated metadata record.
 
 All diagrams use [Mermaid](https://mermaid.js.org/) and render natively in GitHub, VS Code (with the Markdown preview extension), and Cursor.
 

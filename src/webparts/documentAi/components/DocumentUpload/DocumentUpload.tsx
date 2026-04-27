@@ -85,7 +85,7 @@ const DocumentUpload: React.FC<DocumentUploadProps> = ({ chatMessages, updateCha
                 const userMsg: Message = { id: uuidv4(), role: "system", content: "Document content: " + resultText };
                 const newMessages = [...chatMessages, userMsg];
                 const assistantReply = await updateChatMessages(newMessages, "instruction");
-                const structuredResponse = assistantReply ? parseDocumentAnalysisResponse(assistantReply) : null;
+                const structuredResponse = assistantReply ? parseDocumentAnalysisResponse(assistantReply) : undefined;
 
                 if (structuredResponse) {
                     // `reason` and `responseText` are conversational fields meant for the user
